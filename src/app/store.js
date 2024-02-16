@@ -1,9 +1,9 @@
 import {configureStore} from "@reduxjs/toolkit";
-import hotelSlice from "../features/order/hotelSlice";
+import orderSlice from "../features/order/orderSlice";
 
 
 export const store= configureStore({
     reducer:{
-        h:hotelSlice,
+        order:orderSlice,
     },
 });

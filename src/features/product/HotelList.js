@@ -8,7 +8,7 @@ const HotelList = () => {
 
 
     let [arr, setArr] = useState([]);
-    let currency = useSelector(state => state.h.InvitationDil);
+    let currency = useSelector(state => state.order.InvitationDil);
 
     useEffect(() => {
         getAllHotelFromServer().then(res => {
@@ -22,11 +22,11 @@ const HotelList = () => {
     return (<>
         <h1> הדילים הטובים ביותר</h1>
         <ul>
-            {arr.map(item => <li key={item._id}><HotelItem one={item} />{currency}
+            {arr.map(item => <li key={item._id}><HotelItem one={item} /><InviateVacation one={item} />{currency}
 
             </li>)}
         </ul>
-        <InviateVacation  />
+        
 
     </>);
 }
