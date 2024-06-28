@@ -1,0 +1,33 @@
+.basket-item {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 10px;
+    display: flex;
+  }
+  
+  .item-details {
+    flex: 1;
+  }
+  
+  .item-actions {
+    display: flex;
+    align-items: center;
+  }
+  
+  .item-actions img {
+    width: 80px; /* קטין את גודל התמונה */
+    height: auto;
+  }
+  
+  .quantity-controls button {
+    padding: 5px 10px;
+    margin: 0 5px;
+    background-color: #ddd;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .quantity-controls span {
+    margin: 0 5px;
+  }
+  

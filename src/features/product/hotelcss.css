@@ -1,0 +1,21 @@
+ul {
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap-reverse;
+}
+
+.li {
+    list-style-type: none;
+    font: oblique 30px 'Times New Roman', Times, serif;
+    margin-bottom: 10px;
+    border: 1px solid black;
+}
+
+li {
+    width: 30%;
+    border: 1px solid black;
+}
+
+img {
+    width: 100%;
+}

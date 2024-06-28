@@ -1,7 +1,7 @@
 import { useDispatch } from "react-redux";
 import { addDil } from "./orderSlice";
 
-const InviatVacation = ({ one }) => {
+const InviatVacation = ({ one ,onAdd}) => {
 
     let dispatch = useDispatch({ one });
 
@@ -9,6 +9,7 @@ const InviatVacation = ({ one }) => {
     const save = (e) => {
         e.preventDefault();
         dispatch(addDil({...one,qty:x}))
+        onAdd()
     }
 
     return (<>
@@ -18,10 +19,7 @@ const InviatVacation = ({ one }) => {
                 }} name="naumber"/>
                 <input type="submit" />
             </form>
-        {/* <form onSubmit={save}>
-            <input type="number" name="quantity" defaultValue="1" />
-            <button type="submit">Add to Cart</button>
-        </form> */}
+
     </>);
 }
 
